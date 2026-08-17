@@ -1,8 +1,10 @@
 # Homosyntaxic Text Generator (for Russian language)
 
 Inspired by one of the algorithmic text-synthesis methods originally invented in French Oulipo poetic circle (https://en.wikipedia.org/wiki/Oulipo). According to sparse information I could obtain on the web, it was originally created by the poet Raymond Auguste Queneau. 
-This is not the exact copy though, as it uses one text ("ghost") as a donor for the overall structure. Besides that, pronouns, unions, and prepositions are also taken from the ghost text, but nothing else.
-I can't easily explain why I've made this, but feel free to use .
+This is not the exact copy though, as it uses one text ("ghost") as a donor for the overall structure and fills it with lexicon from two other texts, extended by all their possible inflections. Besides that, pronouns, unions, and prepositions are also taken from the ghost text, but nothing else.
+I can't easily explain why I've made this, but feel free to use.
+
+It's not perfect (there are probably lots of morphology mistakes in the underlying dictionary library), but most of the time the resulting text leaves a first impression of something that makes sense. And it may occasionally have more of it than the internet in its current state.
 
 It would be great to have a similar generator for English as well, but this implementation is tightly tied to the Russian-language library it uses. Feel free to ping me if you create one!
 

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+<head>
+    <title>Homosyntaxisme (Russian): Input Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body style="background-color: black; color: white;">
+    <h1>Homosyntaxisme (Russian)</h1>
+    <form action="#" th:action="@{/}" th:object="${textForm}" method="post">
+        <label>
+            <textarea th:field="*{ghost}" rows="50" cols="50" placeholder="Ghost Text" style="background-color: black; color: white;"></textarea>
+        </label>
+        <label>
+            <textarea th:field="*{textOne}" rows="50" cols="50" placeholder="Source Text 1" style="background-color: black; color: white;"></textarea>
+        </label>
+        <label>
+            <textarea th:field="*{textTwo}" rows="50" cols="50" placeholder="Source Text 2" style="background-color: black; color: white;"></textarea>
+        </label>
+        <label>
+            <textarea disabled th:field="*{result}" rows="50" cols="50" placeholder="Result will appear here." style="background-color: #333333; color: white;"></textarea>
+        </label>
+        <br />
+        <br />
+        <br />
+        <input type="submit" value="Generate" />
+        <a th:href="@{/help}" target="_blank" style="color: red;">Help</a>
+    </form>
+
+</body>
+</html>

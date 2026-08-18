@@ -14,6 +14,10 @@ This project is handcrafted with love, without any LLMs. No forests were burned 
 
 The generator is available via REST API (/api/generate), but it is possible to open it in a a simple Web 1.0 form (root /).
 
+## Build Docker image
+
+./gradlew bootBuildImage
+
 ## Special in-text commands
 
 1. Add "#" to the end of the word in ghost text to make it static (exclude from any processing).

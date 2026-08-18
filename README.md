@@ -24,3 +24,8 @@ docker build -t homosyntaxisme . --platform linux/amd64
 1. Add "#" to the end of the word in ghost text to make it static (exclude from any processing).
 2. If part of speech or is determined incorrectly, add [num] to the end of the word in ghost text (e.g. [1]). 
 This will try a different meaning from the dictionary. You will see an error in the result if the meaning with such index does not exist.
+
+## Performance
+
+The dictionary itself, when loading for the first time, takes up ~600-800 Mb.
+I couldn't see any significant memory consumption increase with the length of input text, or nothing as significant as this initial hit. 

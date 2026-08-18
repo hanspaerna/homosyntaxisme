@@ -12,11 +12,12 @@ This project is handcrafted with love, without any LLMs. No forests were burned 
 
 ## Usage
 
-The generator is available via REST API (/api/generate), but it is possible to open it in a a simple Web 1.0 form (root /).
+The generator is available via REST API (/api/generate), but it is possible to open it in a simple Web 1.0 form (root /).
 
 ## Build Docker image
 
-./gradlew bootBuildImage --imagePlatform linux/arm64
+./gradlew build
+docker build -t homosyntaxisme . --platform linux/amd64
 
 ## Special in-text commands
 

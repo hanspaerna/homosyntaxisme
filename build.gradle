@@ -33,7 +33,3 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
-
-bootBuildImage {
-    imageName = "git.vpn.tsal.al/yanumibaal/homosyntaxisme"
-}

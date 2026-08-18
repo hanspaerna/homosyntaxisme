@@ -16,7 +16,7 @@ The generator is available via REST API (/api/generate), but it is possible to o
 
 ## Build Docker image
 
-./gradlew bootBuildImage
+./gradlew bootBuildImage --imagePlatform linux/arm64
 
 ## Special in-text commands
 
